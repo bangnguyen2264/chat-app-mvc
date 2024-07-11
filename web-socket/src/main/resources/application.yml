@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      username: bang
+      password: 123
+      host: localhost
+      port: 27017
+      database: chat_app
+      authentication-database: admin
+      uri: mongodb://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}:${spring.data.mongodb.port}/${spring.data.mongodb.database}d
+server:
+  port: 8088
